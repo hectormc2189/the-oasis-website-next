@@ -27,7 +27,7 @@ function ReservationForm({ cabin, user }) {
       <div className="bg-primary-800 text-primary-300 px-16 py-2 flex justify-between items-center">
         <p>Logged in as</p>
 
-        <div className="flex gap-4 items-center">
+        <div className="flex gap-5 items-center">
           <img
             // Important to display google profile images
             referrerPolicy="no-referrer"
@@ -80,7 +80,7 @@ function ReservationForm({ cabin, user }) {
 
         <div className="flex justify-end items-center gap-6">
           {!(startDate && endDate) ? (
-            <p className="text-primary-300 text-base">
+            <p className="text-primary-600 text-base">
               Start by selecting dates
             </p>
           ) : (

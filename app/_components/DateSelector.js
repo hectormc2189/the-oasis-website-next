@@ -36,7 +36,7 @@ function DateSelector({ settings, cabin, bookedDates }) {
   return (
     <div className="flex flex-col justify-between">
       <DayPicker
-        className="pt-12 place-self-center"
+        className=" pt-12 place-self-center"
         mode="range"
         onSelect={setRange}
         selected={displayRange}
@@ -66,7 +66,7 @@ function DateSelector({ settings, cabin, bookedDates }) {
             ) : (
               <span className="text-2xl">${regularPrice}</span>
             )}
-            <span className="">/night</span>
+            <span className="text-primary-900 px-10">/night</span>
           </p>
           {numNights ? (
             <>
