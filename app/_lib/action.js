@@ -45,6 +45,7 @@ export async function updateBooking(formData) {
 export async function updateProfile(formData) {
   const session = await auth();
   console.log(session);
+
   if (!session) throw new Error("You must be logged in");
 
   const nationalID = formData.get("nationalID");
